@@ -1,0 +1,279 @@
+﻿@{
+    ViewBag.Title = "_LayoutMy";
+}
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dashboard UI Kit">
+    <meta name="author" content="okeytic.com">
+    <title>Panel de Control | Sistema Fanny</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,600" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    @*<link rel="icon" href="~/Content/img/favicon.png" type="image/png">*@
+    <!-- Bootstrap Core CSS -->
+    <link href="~/Assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- MetisMenu CSS -->
+    <link href="~/Assets/metisMenu/metisMenu.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="~/Css/sb-admin-2.css" rel="stylesheet" />
+    <!-- Morris Charts CSS -->
+    <link href="~/Assets/morrisjs/morris.css" rel="stylesheet" />
+    <!-- Custom Fonts -->
+    <link href="~/Assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="~/Content/css/main.min.css">
+    <link href="~/Content/css/custom.css" rel="stylesheet" />
+
+</head>
+<body class="o-page">
+    <!--[if lte IE 9]>
+           <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+       <![endif]-->
+    <!-- SIDEBAR -->
+    <div class="o-page__sidebar js-page-sidebar">
+        <div class="c-sidebar">
+            <a class="c-sidebar__brand" href="#">
+                <img class="c-sidebar__brand-img" src="~/Content/img/logofanny.png" alt="Sistema de libreria">
+            </a>
+
+            <h4 class="c-sidebar__title">Panel de Control</h4>
+            
+            <ul class="c-sidebar__list" id="side-menu">
+
+                <li class="c-sidebar__item">
+                    <a class="c-sidebar__link  is-active" href="~/Inicio/Index">
+                        <i class="fa fa-home u-mr-xsmall"></i>Inicio
+                    </a>
+                </li>
+                <li class="c-sidebar__item">
+                    <a class="c-sidebar__link">
+                        <i class="fa fa-product-hunt u-mr-xsmall"></i>Artículos <span class="c-badge c-badge--success c-badge--xsmall u-ml-xsmall">Click </span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="~/Categoria/Index"><i style="color:#f0ad4e"></i>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Categorías</a>
+                        </li>
+                        <li>
+                            <a href="~/Producto/BuscarProductos"><i style="color:#f0ad4e"></i>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Buscar Producto</a>
+                        </li>
+
+                        <li>
+                            <a href="~/Producto/Index"><i  style="color:#f0ad4e"></i>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Artículos</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="c-sidebar__item">
+                    <a class="c-sidebar__link">
+                        <i class="fa fa-money u-mr-xsmall"></i>Ventas <span class="c-badge c-badge--success c-badge--xsmall u-ml-xsmall">Click </span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="~/Venta/VentaFactura"><i style="color:#f0ad4e"></i>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Generar Factura</a>
+                        </li>
+                        <li>
+                            <a href="~/Venta/NuevaVenta"><i style="color:#f0ad4e"></i>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Nueva Venta</a>
+                        </li>
+                        <li>
+                            <a href="~/DetalleVenta/Index"><i  style="color:#f0ad4e"></i>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Detalle Ventas</a>
+                        </li>
+                        <li>
+                            <a href="~/Venta/ReporteVentas"><i  style="color:#f0ad4e"></i>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Reportes</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="c-sidebar__item">
+                    <a class="c-sidebar__link">
+                        <i class="fa fa-balance-scale u-mr-xsmall"></i>Cobros y Pagos <span class="c-badge c-badge--success c-badge--xsmall u-ml-xsmall">Click </span>
+                    </a>
+                    <ul class="nav nav-second-level">
+                        <li>
+                            <a href="~/ModoPago/Index"><i  style="color:#f0ad4e"></i>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Modos de Pago</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="c-sidebar__item">
+                    <a class="c-sidebar__link" href="~/Vendedor/Index">
+                        <i class="fa fa-users u-mr-xsmall"></i>Vendedores
+                    </a>
+                </li>
+                <li class="c-sidebar__item">
+                    <a class="c-sidebar__link"  href="~/Cliente/Index">
+                        <i class="fa fa-table u-mr-xsmall"></i>Clientes
+                    </a>
+                </li>
+            </ul>
+            <h4 class="c-sidebar__title">Avanzado</h4>
+            <ul class="c-sidebar__list">
+                
+                <li class="c-sidebar__item">
+                    <a class="c-sidebar__link" href="#">
+                        <i class="fa fa-cog u-mr-xsmall"></i>Configuración
+                    </a>
+                </li>
+                <li class="c-sidebar__item">
+                    <a class="c-sidebar__link" >
+                        <i class="fa fa-user u-mr-xsmall"></i>Usuarios
+                    </a>
+                </li>
+            </ul>
+
+        </div><!-- // .c-sidebar -->
+    </div><!-- // .o-page__sidebar -->
+    <!-- MAIN CONTENT -->
+    <main class="o-page__content">
+        <header class="c-navbar u-mb-medium">
+            <button class="c-sidebar-toggle js-sidebar-toggle">
+                <span class="c-sidebar-toggle__bar"></span>
+                <span class="c-sidebar-toggle__bar"></span>
+                <span class="c-sidebar-toggle__bar"></span>
+            </button>
+
+            <h2 class="c-navbar__title u-mr-auto">Desarrollo de software II en ASP.NET MVC</h2>
+            <div class="c-dropdown u-hidden-down@mobile">
+                <a class="c-notification dropdown-toggle" href="#" id="dropdownMenuUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="c-notification__icon">
+                        <i class="fa fa-user-o"></i>
+                    </span>
+                    <span class="c-notification__number">3</span>
+                </a>
+                <div class="c-dropdown__menu c-dropdown__menu--large dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuUser">
+                    <a href="#" class="c-dropdown__item dropdown-item o-media">
+                        <span class="o-media__img u-mr-xsmall">
+                            <span class="c-avatar c-avatar--xsmall">
+                                <img class="c-avatar__img" src="~/Content/img/avatar1-72.jpg" alt="User's Profile Picture">
+                            </span>
+                        </span>
+                        <div class="o-media__body">
+                            <h6 class="u-mb-zero">Someone mentioned you</h6>
+                            <p class="u-text-mute">You have recieved a mention on twitter, check it out!</p>
+                        </div>
+                    </a>
+                    <a href="#" class="c-dropdown__item dropdown-item o-media">
+                        <span class="o-media__img u-mr-xsmall">
+                            <span class="c-avatar c-avatar--xsmall">
+                                <img class="c-avatar__img" src="~/Content/img/avatar2-72.jpg" alt="User's Profile Picture">
+                            </span>
+                        </span>
+                        <div class="o-media__body">
+                            <h6 class="u-mb-zero">Recieved a Payment</h6>
+                            <p class="u-text-mute">You have recieved a mention on twitter, check it out!</p>
+                        </div>
+                    </a>
+                    <a href="#" class="c-dropdown__item dropdown-item o-media">
+                        <span class="o-media__img u-mr-xsmall">
+                            <span class="c-avatar c-avatar--xsmall">
+                                <img class="c-avatar__img" src="~/Content/img/user.png" alt="User's Profile Picture">
+                            </span>
+                        </span>
+                        <div class="o-media__body">
+                            <h6 class="u-mb-zero">You got a promotion</h6>
+                            <p class="u-text-mute">You have recieved a mention on twitter, check it out!</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="c-dropdown dropdown u-mr-medium u-ml-small u-hidden-down@mobile">
+                <a class="c-notification dropdown-toggle" href="#" id="dropdownMenuAlerts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="c-notification__icon">
+                        <i class="fa fa-bell-o"></i>
+                    </span>
+                    <span class="c-notification__number">3</span>
+                </a>
+                <div class="c-dropdown__menu c-dropdown__menu--large dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuAlerts">
+                    <a href="#" class="c-dropdown__item dropdown-item o-media">
+                        <span class="o-media__img u-mr-xsmall">
+                            <span class="c-avatar c-avatar--xsmall">
+                                <span class="c-avatar__img u-bg-success u-flex u-justify-center u-align-items-center">
+                                    <i class="fa fa-check u-text-large u-color-white"></i>
+                                </span>
+                            </span>
+
+                        </span>
+                        <div class="o-media__body">
+                            <h6 class="u-mb-zero">Completed a task</h6>
+                            <p class="u-text-mute">You have recieved a mention on twitter, check it out!</p>
+                        </div>
+                    </a>
+                    <a href="#" class="c-dropdown__item dropdown-item o-media">
+                        <span class="o-media__img u-mr-xsmall">
+                            <span class="c-avatar c-avatar--xsmall">
+                                <span class="c-avatar__img u-bg-fancy u-flex u-justify-center u-align-items-center">
+                                    <i class="fa fa-calendar u-text-large u-color-white"></i>
+                                </span>
+                            </span>
+
+                        </span>
+                        <div class="o-media__body">
+                            <h6 class="u-mb-zero">Company meetup</h6>
+                            <p class="u-text-mute">You have recieved a mention on twitter, check it out!</p>
+                        </div>
+                    </a>
+                    <a href="#" class="c-dropdown__item dropdown-item o-media">
+                        <span class="o-media__img u-mr-xsmall">
+                            <span class="c-avatar c-avatar--xsmall">
+                                <span class="c-avatar__img u-bg-primary u-flex u-justify-center u-align-items-center">
+                                    <i class="fa fa-info u-text-large u-color-white"></i>
+                                </span>
+                            </span>
+
+                        </span>
+                        <div class="o-media__body">
+                            <h6 class="u-mb-zero">Someone mentioned you</h6>
+                            <p class="u-text-mute">You have recieved a mention on twitter, check it out!</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="c-dropdown dropdown">
+                <a class="c-avatar c-avatar--xsmall has-dropdown dropdown-toggle" href="#" id="dropdwonMenuAvatar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="c-avatar__img" src="~/Content/img/avatar-72.jpg" alt="User's Profile Picture">
+                </a>
+                <div class="c-dropdown__menu dropdown-menu dropdown-menu-right" aria-labelledby="dropdwonMenuAvatar">
+                    <a class="c-dropdown__item dropdown-item" href="#">Editar perfil</a>
+                    <a class="c-dropdown__item dropdown-item" href="#">Ver actividad</a>
+                    <a class="c-dropdown__item dropdown-item" href="~/Account/Login">Salir</a>
+                </div>
+            </div>
+        </header><!-- // .c-navbar -->
+        <div class="container">
+            @RenderBody()
+        </div><!-- // .container -->
+    </main>
+    <script>
+        var urlGeneral = '@Url.Content("~/")'
+    </script>
+    <script src="~/Content/js/main.js"></script>
+    <script src="~/Content/js/jquery.plugins.js"></script>
+
+
+    <!-- jQuery -->
+    <script src="~/Assets/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="~/Assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="~/Assets/metisMenu/metisMenu.min.js"></script>
+    <!-- Morris Charts JavaScript -->
+
+    <script src="~/Assets/morrisjs/morris.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="~/Js/sb-admin-2.js"></script>
+
+
+
+    @RenderSection("scripts", false)
+</body>
+</html>

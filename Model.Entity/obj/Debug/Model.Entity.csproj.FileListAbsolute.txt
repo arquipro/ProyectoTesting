@@ -1,0 +1,15 @@
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\FACTURA_JHONNY\Model.Entity\bin\Debug\Model.Entity.dll
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\FACTURA_JHONNY\Model.Entity\bin\Debug\Model.Entity.pdb
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\FACTURA_JHONNY\Model.Entity\obj\Debug\Model.Entity.dll
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\FACTURA_JHONNY\Model.Entity\obj\Debug\Model.Entity.pdb
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\FACTURA_JHONNYv2\Model.Entity\bin\Debug\Model.Entity.dll
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\FACTURA_JHONNYv2\Model.Entity\bin\Debug\Model.Entity.pdb
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\FACTURA_JHONNYv2\Model.Entity\obj\Debug\Model.Entity.csprojResolveAssemblyReference.cache
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\FACTURA_JHONNYv2\Model.Entity\obj\Debug\Model.Entity.dll
+C:\Users\Samuel\Documents\Visual Studio 2015\Projects\FACTURA_JHONNYv2\Model.Entity\obj\Debug\Model.Entity.pdb
+C:\Users\jesus\Desktop\SISTEMA LIBRERIA FANNY\SISTEMA LIBRERIA\FACTURA_FANNYv2\Model.Entity\bin\Debug\Model.Entity.dll
+C:\Users\jesus\Desktop\SISTEMA LIBRERIA FANNY\SISTEMA LIBRERIA\FACTURA_FANNYv2\Model.Entity\bin\Debug\Model.Entity.pdb
+C:\Users\jesus\Desktop\SISTEMA LIBRERIA FANNY\SISTEMA LIBRERIA\FACTURA_FANNYv2\Model.Entity\obj\Debug\Model.Entity.csprojAssemblyReference.cache
+C:\Users\jesus\Desktop\SISTEMA LIBRERIA FANNY\SISTEMA LIBRERIA\FACTURA_FANNYv2\Model.Entity\obj\Debug\Model.Entity.csproj.CoreCompileInputs.cache
+C:\Users\jesus\Desktop\SISTEMA LIBRERIA FANNY\SISTEMA LIBRERIA\FACTURA_FANNYv2\Model.Entity\obj\Debug\Model.Entity.dll
+C:\Users\jesus\Desktop\SISTEMA LIBRERIA FANNY\SISTEMA LIBRERIA\FACTURA_FANNYv2\Model.Entity\obj\Debug\Model.Entity.pdb
